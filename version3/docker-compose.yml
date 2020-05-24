@@ -1,3 +1,4 @@
+# docker-compose for hassio: https://www.home-assistant.io/docs/installation/docker/
 version: '3'
 services:
   homeassistant:
@@ -5,10 +6,10 @@ services:
     image: homeassistant/home-assistant:stable
     volumes:
       - ./hassio_config:/config
-    devices:
-      - /dev/ttyUSB0:/dev/ttyUSB0
-      - /dev/ttyUSB1:/dev/ttyUSB1
-      - /dev/ttyACM0:/dev/ttyACM0
+    # devices:
+    #   - /dev/ttyUSB0:/dev/ttyUSB0
+    #   - /dev/ttyUSB1:/dev/ttyUSB1
+    #   - /dev/ttyACM0:/dev/ttyACM0
     environment:
       - TZ=America/New_York
     restart: always
