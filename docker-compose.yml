@@ -41,3 +41,11 @@ services:
     cap_add:
       - NET_ADMIN
     restart: unless-stopped
+
+  python:
+    container_name: python
+    build: ./services/python/.
+    restart: unless-stopped
+    network_mode: host
+    volumes:
+      - ./volumes/python/app:/usr/src/app

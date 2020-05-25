@@ -1,0 +1,8 @@
+#ignore data folders for containers
+/volumes/portainer/
+/volumes/homebridge/
+/volumes/pihole/
+/backups/
+/version3/hassio_config/
+.outofdate
+.log
