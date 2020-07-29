@@ -22,4 +22,4 @@ services:
         - ./nginx/reverseproxy.conf:/etc/nginx/conf.d/reverseproxy.conf
     ports:
       - 80:80
-      - 443:443
+      - 443:443Yuan 
