@@ -2,6 +2,7 @@
 /volumes/portainer/
 /volumes/homebridge/
 /volumes/pihole/
+/volumes/motioneye/var_lib_motioneye/
 /backups/
 /version3/hassio_config/
 .outofdate

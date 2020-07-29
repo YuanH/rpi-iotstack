@@ -1,0 +1,12 @@
+{
+    "1": {
+        "gdrive": {
+            "authorization_key": "4/2QGVWiG2yqnXYMlOm_soqKIdT6jwj53CxBH7T3TJNJY9AEuf9zhk6U0", 
+            "credentials": {
+                "access_token": "ya29.a0AfH6SMDCrzAV0u99e5NJLg1EM6WQ-bCDirAdUAPdHvcllT8EYCCyCBIxbdb6V7dZOpqxyqcrgQNhEqs38uesJ5Ag1UY1DxspgJritABAOhRQmVTPF0sAAwlOiA2guGRS4zaDhwPBCC-fRAd0ly_8V-C454htOLj-SvU", 
+                "refresh_token": "1//0dlXDqh1GmacECgYIARAAGA0SNwF-L9IryBeArlfTAtZqy1dwSi-yLLCyzwsN5SnCbFXrEuAdZUArt-DRzY3Y6QUlXxab1DTqBt0"
+            }, 
+            "location": "/motioneye/office"
+        }
+    }
+}
