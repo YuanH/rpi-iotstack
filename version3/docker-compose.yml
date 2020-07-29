@@ -3,7 +3,7 @@ version: '3'
 services:
   homeassistant:
     container_name: home-assistant
-    image: homeassistant/home-assistant:stable
+    image: homeassistant/raspberrypi4-homeassistant:latest
     volumes:
       - ./hassio_config:/config
     # devices:
@@ -15,6 +15,13 @@ services:
     restart: always
     network_mode: host
 
+  homeassistant_supervisor:
+    container_name: hassio_supervisor
+    image: homeassistant/armv7-hassio-supervisor:latest
+    volumes:
+      - ./hassio_config:/data
+
+
   nginx:
     container_name: nginx
     image: nginx:latest
@@ -22,4 +29,8 @@ services:
         - ./nginx/reverseproxy.conf:/etc/nginx/conf.d/reverseproxy.conf
     ports:
       - 80:80
+<<<<<<< HEAD
       - 443:443Yuan 
+=======
+      - 443:443
+>>>>>>> 956550d642f643b4676515affe89317b65aa0136
