@@ -3,7 +3,7 @@ version: '3'
 services:
   homeassistant:
     container_name: home-assistant
-    image: homeassistant/home-assistant:stable
+    image: homeassistant/raspberrypi4-homeassistant:latest
     volumes:
       - ./hassio_config:/config
     # devices:
@@ -14,6 +14,13 @@ services:
       - TZ=America/New_York
     restart: always
     network_mode: host
+
+  homeassistant_supervisor:
+    container_name: hassio_supervisor
+    image: homeassistant/armv7-hassio-supervisor:latest
+    volumes:
+      - ./hassio_config:/data
+
 
   nginx:
     container_name: nginx
